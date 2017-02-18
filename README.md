@@ -189,38 +189,6 @@ else {
 - (void)setExampleText:(NSString *)text;
 ```
 
-**Not Preferred:**
-
-```objc
-- (void)setExampleText:(NSString*)text;
-```
-
-* In method parameter type, there SHOULD NOT be a space after open bracket and before close bracket.
-
-**Preferred:**
-```objc
-- (void)setExampleText:(NSString *)text;
-```
-
-**Not Preferred:**
-
-```objc
-- (void)setExampleText:( NSString * )text;
-```
-
-* In method parameter name, there SHOULD NOT be a space between parameter's type and name.
-
-**Preferred:**
-```objc
-- (void)setExampleText:(NSString *)text;
-```
-
-**Not Preferred:**
-
-```objc
-- (void)setExampleText:(NSString *) text;
-```
-
 * Prefer using auto-synthesis. But if necessary, `@synthesize` and `@dynamic` should each be declared on new lines in the implementation.
 * Colon-aligning method invocation should often be avoided.  There are cases where a method signature may have >= 3 colons and colon-aligning makes the code more readable. Please do **NOT** however colon align methods containing blocks because Xcode's indenting makes it illegible.
 
@@ -312,7 +280,39 @@ Local variables should not contain underscores.
 
 ## Methods
 
-In method signatures, there should be a space after the method type (-/+ symbol). There should be a space between the method segments (matching Apple's style).  Always include a keyword and be descriptive with the word before the argument which describes the argument.
+**Not Preferred:**
+
+```objc
+- (void)setExampleText:(NSString*)text;
+```
+
+* In method parameter type, there SHOULD NOT be a space after open bracket and before close bracket.
+
+**Preferred:**
+```objc
+- (void)setExampleText:(NSString *)text;
+```
+
+**Not Preferred:**
+
+```objc
+- (void)setExampleText:( NSString * )text;
+```
+
+* In method parameter name, there SHOULD NOT be a space between parameter's type and name.
+
+**Preferred:**
+```objc
+- (void)setExampleText:(NSString *)text;
+```
+
+**Not Preferred:**
+
+```objc
+- (void)setExampleText:(NSString *) text;
+```
+
+There should be a space between the method segments (matching Apple's style).  Always include a keyword and be descriptive with the word before the argument which describes the argument.
 
 The usage of the word "and" is reserved.  It should not be used for multiple parameters as illustrated in the `initWithWidth:height:` example below.
 

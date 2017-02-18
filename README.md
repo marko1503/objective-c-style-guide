@@ -66,31 +66,34 @@ UIColor *myColour = [UIColor whiteColor];
 ## Code Organization
 
 Use `#pragma mark -` to categorize methods in functional groupings and protocol/delegate implementations following this general structure.
+You should place 2 new lines between each `#pragma mark -`.
+Every `#pragma mark -` starts with 2 new lines after an other `#pragma mark -`.
+First `#pragma mark -` just after `@implementation` starts with 1 new line.
+
 
 ```objc
 #pragma mark - Lifecycle
-
 - (instancetype)init {}
 - (void)dealloc {}
 - (void)viewDidLoad {}
 - (void)viewWillAppear:(BOOL)animated {}
 - (void)didReceiveMemoryWarning {}
 
-#pragma mark - Custom Accessors
 
+#pragma mark - Custom Accessors
 - (void)setCustomProperty:(id)value {}
 - (id)customProperty {}
 
-#pragma mark - IBActions
 
+#pragma mark - IBActions
 - (IBAction)submitData:(id)sender {}
 
-#pragma mark - Public
 
+#pragma mark - Public
 - (void)publicMethod {}
 
-#pragma mark - Private
 
+#pragma mark - Private
 - (void)privateMethod {}
 
 #pragma mark - Protocol conformance
@@ -98,25 +101,26 @@ Use `#pragma mark -` to categorize methods in functional groupings and protocol/
 #pragma mark - UITableViewDataSource
 #pragma mark - UITableViewDelegate
 
-#pragma mark - NSCopying
 
+#pragma mark - NSCopying
 - (id)copyWithZone:(NSZone *)zone {}
 
-#pragma mark - NSObject
 
+#pragma mark - NSObject
 - (NSString *)description {}
 ```
 
 ## Spacing
 
-* Indent using 2 spaces (this conserves space in print and makes line wrapping less likely). Never indent with tabs. Be sure to set this preference in Xcode.
+* Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
 * Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
 
 **Preferred:**
 ```objc
 if (user.isHappy) {
   //Do something
-} else {
+} 
+else {
   //Do something else
 }
 ```

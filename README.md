@@ -96,6 +96,7 @@ First `#pragma mark -` just after `@implementation` starts with 1 new line.
 #pragma mark - Private
 - (void)privateMethod {}
 
+
 #pragma mark - Protocol conformance
 #pragma mark - UITextFieldDelegate
 #pragma mark - UITableViewDataSource
@@ -137,6 +138,24 @@ else {
 ```
 
 * There should be exactly one blank line between methods to aid in visual clarity and organization. Whitespace within methods should separate functionality, but often there should probably be new methods.
+**Preferred:**
+
+```objc
+- (void)setExampleText:(NSString *)text {
+}
+
+- (void)setExampleText:(NSString *)text image:(UIImage *)image {
+}
+```
+
+**Not Preferred:**
+```objc
+- (void)setExampleText:(NSString *)text {
+}
+- (void)setExampleText:(NSString *)text image:(UIImage *)image {
+}
+```
+
 * Prefer using auto-synthesis. But if necessary, `@synthesize` and `@dynamic` should each be declared on new lines in the implementation.
 * Colon-aligning method invocation should often be avoided.  There are cases where a method signature may have >= 3 colons and colon-aligning makes the code more readable. Please do **NOT** however colon align methods containing blocks because Xcode's indenting makes it illegible.
 

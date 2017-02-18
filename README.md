@@ -169,7 +169,7 @@ else {
 -(void)setExampleText:(NSString *)text;
 ```
 
-* In method signatures, there SHOULD NOT be a space after the scope return type.
+* In method signatures, there SHOULD NOT be a space after the return type.
 
 **Preferred:**
 ```objc

@@ -156,39 +156,6 @@ else {
 }
 ```
 
-* In method signatures, there SHOULD be a space after the scope (`-` or `+` symbol). There SHOULD be a space between the method segments.
-
-**Preferred:**
-```objc
-- (void)setExampleText:(NSString *)text;
-```
-
-**Not Preferred:**
-
-```objc
--(void)setExampleText:(NSString *)text;
-```
-
-* In method signatures, there SHOULD NOT be a space after the return type.
-
-**Preferred:**
-```objc
-- (void)setExampleText:(NSString *)text;
-```
-
-**Not Preferred:**
-
-```objc
-- (void) setExampleText:(NSString *)text;
-```
-
-* In method parameter type, there SHOULD be ONE space after between object type and pointer (\*).
-
-**Preferred:**
-```objc
-- (void)setExampleText:(NSString *)text;
-```
-
 * Prefer using auto-synthesis. But if necessary, `@synthesize` and `@dynamic` should each be declared on new lines in the implementation.
 * Colon-aligning method invocation should often be avoided.  There are cases where a method signature may have >= 3 colons and colon-aligning makes the code more readable. Please do **NOT** however colon align methods containing blocks because Xcode's indenting makes it illegible.
 
@@ -279,6 +246,39 @@ An exception to this: inside initializers, the backing instance variable (i.e. _
 Local variables should not contain underscores.
 
 ## Methods
+
+* In method signatures, there SHOULD be a space after the scope (`-` or `+` symbol). There SHOULD be a space between the method segments.
+
+**Preferred:**
+```objc
+- (void)setExampleText:(NSString *)text;
+```
+
+**Not Preferred:**
+
+```objc
+-(void)setExampleText:(NSString *)text;
+```
+
+* In method signatures, there SHOULD NOT be a space after the return type.
+
+**Preferred:**
+```objc
+- (void)setExampleText:(NSString *)text;
+```
+
+**Not Preferred:**
+
+```objc
+- (void) setExampleText:(NSString *)text;
+```
+
+* In method parameter type, there SHOULD be ONE space after between object type and pointer (\*).
+
+**Preferred:**
+```objc
+- (void)setExampleText:(NSString *)text;
+```
 
 **Not Preferred:**
 

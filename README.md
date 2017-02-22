@@ -16,6 +16,8 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Cocoa Fundamentals Guide](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CocoaFundamentals/Introduction/Introduction.html)
 * [Coding Guidelines for Cocoa](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 * [iOS App Programming Guide](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/Introduction/Introduction.html)
+* https://github.com/NYTimes/objective-c-style-guide/blob/master/README.md#variables
+* https://github.com/RobotsAndPencils/objective-c-style-guide#organization
 
 ## Table of Contents
 
